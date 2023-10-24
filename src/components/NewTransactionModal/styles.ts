@@ -55,7 +55,6 @@ export const Content = styled(Dialog.Content)`
     }
   }
 `
-
 export const CloseButton = styled(Dialog.Close)`
   position: absolute;
   background: transparent;
@@ -65,4 +64,32 @@ export const CloseButton = styled(Dialog.Close)`
   line-height: 0;
   color: ${props => props.theme['gray-500']};
   cursor: pointer;
+  `
+export const TransactionType = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  gap: 1rem;
+  margin-top: .5rem;
+  `
+
+interface TransactionTypeButtonProps {
+  variant: 'income' | 'outcome'
+}  
+
+export const TransactionTypeButton = styled.button<TransactionTypeButtonProps >`
+  background: ${props => props.theme['gray-700']};
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 6px;
+  border: 0;
+  font-weight: bold;
+  color: ${props => props.theme['gray-300']};
+  cursor: pointer;
+  
+  svg {
+    color: ${props => props.variant === 'income' ? props.theme['green-300'] : props.theme['red-300']};
+  }
 `

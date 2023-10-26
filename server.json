@@ -1,0 +1,20 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2023-10-26T16:02:42.672Z"
+    },
+    {
+      "id": 2,
+      "description": "Aluguel",
+      "type": "outcome",
+      "category": "Conta Fixa",
+      "price": 4000,
+      "createdAt": "2023-10-10T00:00:01.672Z"
+    }
+  ]
+}

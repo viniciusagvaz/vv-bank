@@ -10,8 +10,7 @@ export function App() {
       <GlobalStyle/>
 
       <TransactionsProvider>
-      
-      <Transactions/>
+        <Transactions/>
       </TransactionsProvider>
     </ThemeProvider>
   )

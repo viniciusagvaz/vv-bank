@@ -15,6 +15,14 @@
       "category": "Conta Fixa",
       "price": 4000,
       "createdAt": "2023-10-10T00:00:01.672Z"
+    },
+    {
+      "id": 3,
+      "description": "Luz",
+      "type": "outcome",
+      "category": "Conta Fixa",
+      "price": 411,
+      "createdAt": "2023-10-10T00:00:01.672Z"
     }
   ]
 }

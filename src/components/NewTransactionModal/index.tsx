@@ -29,6 +29,9 @@ export function NewTransactionModal() {
     formState: { isSubmitting },
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
+    defaultValues: {
+      type: 'income',
+    },
   })
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
@@ -41,7 +44,7 @@ export function NewTransactionModal() {
       <Overlay />
 
       <Content>
-        <Dialog.Title> Nova Transação </Dialog.Title>
+        <Dialog.Title>Nova Transação</Dialog.Title>
 
         <CloseButton>
           <X size={24} />
@@ -54,12 +57,14 @@ export function NewTransactionModal() {
             required
             {...register('description')}
           />
+
           <input
             type="text"
             placeholder="Preço"
             required
             {...register('price', { valueAsNumber: true })}
           />
+
           <input
             type="text"
             placeholder="Categoria"
@@ -71,8 +76,6 @@ export function NewTransactionModal() {
             control={control}
             name="type"
             render={({ field }) => {
-              console.log(field)
-
               return (
                 <TransactionType
                   onValueChange={field.onChange}

@@ -17,7 +17,7 @@ export function SearchForm() {
     TransactionsContext, 
     (context) =>{
       return context.fetchTransactions
-    },
+    }
   )
 
   const {

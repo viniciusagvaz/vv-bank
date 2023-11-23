@@ -47,6 +47,14 @@
       "type": "income",
       "createdAt": "2023-11-09T22:59:09.391Z",
       "id": 6
+    },
+    {
+      "description": "Mercado",
+      "category": "Gasto Pessoal",
+      "price": 780,
+      "type": "income",
+      "createdAt": "2023-11-23T16:44:15.677Z",
+      "id": 7
     }
   ]
 }

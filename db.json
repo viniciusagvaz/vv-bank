@@ -23,38 +23,6 @@
       "category": "Conta Fixa",
       "price": 411,
       "createdAt": "2023-10-10T00:00:01.672Z"
-    },
-    {
-      "id": 4,
-      "description": "Manutenção de Site",
-      "type": "income",
-      "category": "Venda",
-      "price": 4730,
-      "createdAt": "2023-11-09T00:00:01.672Z"
-    },
-    {
-      "description": "Provedor de Internet",
-      "category": "Conta Fixa",
-      "price": 240,
-      "type": "outcome",
-      "createdAt": "2023-11-09T22:43:36.459Z",
-      "id": 5
-    },
-    {
-      "description": "Mercado",
-      "category": "Gasto Pessoal",
-      "price": 780,
-      "type": "income",
-      "createdAt": "2023-11-09T22:59:09.391Z",
-      "id": 6
-    },
-    {
-      "description": "Mercado",
-      "category": "Gasto Pessoal",
-      "price": 780,
-      "type": "income",
-      "createdAt": "2023-11-23T16:44:15.677Z",
-      "id": 7
     }
   ]
 }

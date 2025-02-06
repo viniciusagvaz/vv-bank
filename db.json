@@ -4,7 +4,7 @@
       "id": 1,
       "description": "Desenvolvimento de site",
       "type": "income",
-      "category": "Venda",
+      "category": "Renda Variável",
       "price": 12000,
       "createdAt": "2023-10-26T16:02:42.672Z"
     },
@@ -22,6 +22,14 @@
       "type": "outcome",
       "category": "Conta Fixa",
       "price": 411,
+      "createdAt": "2023-10-10T00:00:01.672Z"
+    },
+    {
+      "id": 4,
+      "description": "Renda Uber",
+      "type": "income",
+      "category": "Renda Variável",
+      "price": 1255.55,
       "createdAt": "2023-10-10T00:00:01.672Z"
     }
   ]

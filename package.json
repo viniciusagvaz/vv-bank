@@ -1,9 +1,9 @@
 {
-  "name": "03-dt-money",
+  "name": "vv-bank",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://viniciusagvaz.github.io/dt-money/",
+  "homepage": "https://viniciusagvaz.github.io/vv-bank/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -28,7 +28,6 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

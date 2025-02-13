@@ -5,7 +5,6 @@ export const SummaryContainer = styled.section`
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -23,22 +22,18 @@ interface SummaryCardProps {
 }
 
 export const SummaryCard = styled.div<SummaryCardProps>`
-  background: ${(props) => props.theme["gray-900"]};
-  color: ${(props) => props.theme["gray-900"]};
-  border-radius: 6px;
   padding: 2rem;
   max-width: 330px;
   width: 100%;
-  margin: 0 auto;
   height: 175px;
-  background: linear-gradient(#fff2, transparent);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
-  transition: 0.5s;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
   color: ${(props) => props.theme["white"]};
   transform: rotate(calc(var(--r) * 1deg));
+  background: linear-gradient(#001, transparent);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
 
   header {
     display: flex;
@@ -55,7 +50,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
 
   &:hover {
     transform: scale(1.025);
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(rgba(255, 155, 75, 0.05), transparent);
+    box-shadow: 0 25px 15px   rgba(30, 30, 30, 0.05);, transparent);
+    
   }
 
   ${(props) =>

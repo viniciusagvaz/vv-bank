@@ -23,17 +23,17 @@ export function Transactions() {
             {transactions.map((transaction) => {
               return (
                 <tr key={transaction.id}>
+                  <span className="date">
+                    {dateFormatter.format(new Date(transaction.createdAt))}
+                  </span>
                   <td>
+                    <span>
+                      {transaction.description}
+                    </span>
                     <span className="description">
-                      <span>
-                        {dateFormatter.format(new Date(transaction.createdAt))}
-                      </span>
-                      <span>
-                        {transaction.description}
-                      </span>
                     </span>
                   </td>
-                  
+
                   <td>
                     <S.PriceHighlight variant={transaction.type}>
                       {transaction.type === "outcome" && "- "}
